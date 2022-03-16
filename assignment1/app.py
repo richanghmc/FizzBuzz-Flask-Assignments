@@ -7,4 +7,4 @@ def introduction():
     name = "Richard"
     age = 19
     message = "I am excited to learn Flask!"
-    return render_template('home.html', title = title, name = name, age = age, message = message)
+    return render_template('home.html', title = title, name = name, age = age, message = message, list =listOfFavoriteFoods)
