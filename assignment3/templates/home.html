@@ -1,0 +1,10 @@
+{% extends "main.html" %}
+{% block container %}
+    <p>My favorite foods are<p>
+        <br>
+            <ol>
+                {% for food in foods %}
+                <li>{{food}}</li>
+                {% endfor %}
+            </ol>
+{% endblock %}

@@ -1,0 +1,14 @@
+{% extends "main.html" %}
+
+{% block container %}
+    {% if drinks %}
+        <p>My favorite drinks are<p>
+        <ol>
+            {% for drink in drinks %}
+            <li>{{drink}}</li>
+            {% endfor %}
+        </ol>
+        {% else %}
+        <p>I have no favorite drinks</p>
+    {% endif %}
+{% endblock %}
